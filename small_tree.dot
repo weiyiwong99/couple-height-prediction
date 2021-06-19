@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="birth year <= 1.0\nmse = 28.5\nsamples = 67\nvalue = 171.0"] ;
+1 [label="height <= 0.6\nmse = 22.5\nsamples = 57\nvalue = 170.0"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="height <= -1.9\nmse = 18.9\nsamples = 42\nvalue = 169.3"] ;
+1 -> 2 ;
+3 [label="mse = 42.2\nsamples = 2\nvalue = 163.5"] ;
+2 -> 3 ;
+4 [label="mse = 17.0\nsamples = 40\nvalue = 169.5"] ;
+2 -> 4 ;
+5 [label="birth year <= 0.0\nmse = 26.9\nsamples = 15\nvalue = 171.8"] ;
+1 -> 5 ;
+6 [label="mse = 9.9\nsamples = 8\nvalue = 169.5"] ;
+5 -> 6 ;
+7 [label="mse = 33.3\nsamples = 7\nvalue = 174.5"] ;
+5 -> 7 ;
+8 [label="birth year <= 2.1\nmse = 31.9\nsamples = 10\nvalue = 175.4"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="height <= 0.6\nmse = 21.5\nsamples = 9\nvalue = 176.6"] ;
+8 -> 9 ;
+10 [label="mse = 23.5\nsamples = 7\nvalue = 174.7"] ;
+9 -> 10 ;
+11 [label="mse = 0.0\nsamples = 2\nvalue = 180.0"] ;
+9 -> 11 ;
+12 [label="mse = 0.0\nsamples = 1\nvalue = 165.0"] ;
+8 -> 12 ;
+}
